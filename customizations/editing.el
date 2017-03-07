@@ -54,16 +54,7 @@
 ;; yay rainbows!
 ;; (global-rainbow-delimiters-mode t)
 
-;; use 2 spaces for tabs
-;;(defun die-tabs ()
-;;  (interactive)
-;;  (set-variable 'tab-width 2)
-;;  (mark-whole-buffer)
-;;  (untabify (region-beginning) (region-end))
-;;  (keyboard-quit))
-
 (setq electric-indent-mode nil)
-
 
 ;; prefer C-z for undo
 (global-unset-key "\C-z")
