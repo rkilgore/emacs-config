@@ -59,3 +59,14 @@
 ;; prefer C-z for undo
 (global-unset-key "\C-z")
 (global-set-key "\C-z" 'undo)
+
+;; map a bunch of C-x C-* keys to C-c C-*, for easier dvorak
+(global-set-key (kbd "C-c C-s") 'save-buffer)
+(global-set-key (kbd "C-c C-e") 'eval-last-sexp)
+(global-set-key (kbd "C-c o") 'other-window)
+(global-set-key (kbd "C-c 1") 'delete-other-windows)
+(global-set-key (kbd "C-c C-b") 'ibuffer)
+(global-set-key (kbd "C-c b") 'ido-switch-buffer)
+(global-set-key (kbd "C-c k") 'ido-kill-buffer)
+(global-set-key (kbd "C-c C-f") 'ido-find-file)
+(global-set-key (kbd "C-c C-c C-f") 'find-file)
